@@ -205,5 +205,82 @@ body{
 
 #footer{
     height: 100px;
-    background-color: green;
+    /* background-color: palegreen; */
+}
+
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.f_left>div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_menu{
+    border-bottom: 1px solid green;
+}
+
+.f_menu a:hover{
+    text-decoration: underline;
+}
+
+.f_menu a::after{
+    content: "|";
+    padding: 0 10px;
+}
+
+.f_menu a:last-child::after{
+    display: none;
+}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.family select{
+    width: 150px;
+    height: 50px;
+}
+
+/* pop_up 영역 */
+
+.pop_up{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border: 10px groove #5b9bd5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: none;
+}
+
+.pop_up h3{
+    border-bottom: 5px double gray;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.pop_up p{
+    padding-top: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+.pop_up .close{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
+    padding: 5px 20px;
+    cursor: pointer;
 }

@@ -34,7 +34,16 @@ $(function(){
 
         console.log(n);
 
-    },2000)
+    },2000);
+
+    //팝업
+    $(".n_pop").click(function(){
+        $(".pop_up").show();
+    }) // click
+
+    $(".close").click(function(){
+        $(".pop_up").hide();
+    }) // click
 
 
 })//jquery
